@@ -1,11 +1,12 @@
 <canvas id ="gc" width="400" height="400"></canvas> 
 <script>
     window.onload=function(){
-        canv=document.getElementById("gc");
         ctx=canv.getContext("2d");
-        document.addEventListener("keydown", keyPush);
-        setInterval(game, 1000/11);
-    }
+     window.onload=function(){
+         canv=document.getElementById("gc");
+         ctx=canv.getContext("2d");
+         document.addEventListener("keydown", keyPush);
+         setInterval(game, 1000/11); }
     px=py=10;
     gs=tc=20;
     ax=ay=15;
